@@ -1,0 +1,105 @@
+<mat-table [dataSource]="dataList" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="lastName1">
+      <mat-header-cell *matHeaderCellDef> First Last Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.lastName1}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="lastName2">
+      <mat-header-cell *matHeaderCellDef> Second Last Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.lastName2}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+
+  <br>
+  <br>
+
+  <hr>
+
+  <div class="center">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>First Last Name</mat-label>
+          <input matInput formControlName="lastName1">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>Second Last Name</mat-label>
+          <input matInput formControlName="lastName2">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>ID</mat-label>
+          <input matInput formControlName="id">
+        </mat-form-field>
+      
+        <button mat-raised-button color="primary" type="submit">Crear</button>
+      </form>
+      
+  </div>
+  
+  <br>
+  <br>
+
+  <div class="center">
+    <form [formGroup]="form" (ngSubmit)="onUpdate()" class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>First Last Name</mat-label>
+          <input matInput formControlName="lastName1">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>Second Last Name</mat-label>
+          <input matInput formControlName="lastName2">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>ID</mat-label>
+          <input matInput formControlName="id">
+        </mat-form-field>
+      
+        <button mat-raised-button color="accent" type="submit">Actulizar</button>
+      </form>
+      
+  </div>
+  
+  <br>
+  <br>
+
+  <div class="center">
+    <form [formGroup]="form" (ngSubmit)="onDelete()" class="example-form">
+
+        <mat-form-field class="example-full-width">
+          <mat-label>ID</mat-label>
+          <input matInput formControlName="id">
+        </mat-form-field>
+      
+        <button mat-raised-button color="warn" type="submit">Borrar</button>
+      </form>
+      
+  </div>
+  
+  

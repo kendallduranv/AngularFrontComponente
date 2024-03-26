@@ -1,0 +1,84 @@
+/* :host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/borabora.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+} */
+
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/borabora.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    /* Cambiado de height a min-height */
+}
+
+.example-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centrar los campos en la página */
+    gap: 20px;
+    /* Mantener un espacio entre los campos */
+}
+
+/* Eliminar las reglas para .example-form .form-column */
+
+
+.mat-form-field {
+    width: 100%;
+    min-width: 300px;
+}
+
+mat-card-title,
+mat-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: red;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.example-card {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+.login-card {
+    width: 60%;
+    max-width: 80%;
+    max-height: 100%;
+    /* margin: auto; */
+}
+
+.mat-card {
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.example-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+  

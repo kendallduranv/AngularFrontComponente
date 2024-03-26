@@ -1,0 +1,203 @@
+<mat-table [dataSource]="dataList" class="mat-elevation-z8">
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef> Nombre </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="clientIdentification">
+      <mat-header-cell *matHeaderCellDef> Identificacion </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.clientIdentification}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="gender">
+      <mat-header-cell *matHeaderCellDef> Genero </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.gender}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="phone">
+      <mat-header-cell *matHeaderCellDef> Telefono </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.phone}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="zipCode">
+      <mat-header-cell *matHeaderCellDef> Codigo Postal </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.zipCode}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef> Email </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.email}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="nationality">
+      <mat-header-cell *matHeaderCellDef> Nacionalidad </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.nationality}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="birthDate">
+      <mat-header-cell *matHeaderCellDef> Fecha nacimiento </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.birthDate}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="lastName1">
+      <mat-header-cell *matHeaderCellDef> First Last Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.lastName1}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="lastName2">
+      <mat-header-cell *matHeaderCellDef> Second Last Name </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.lastName2}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef> ID </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+
+
+  <br>
+  <br>
+
+  <hr>
+
+  <div class="center">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Nombre</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Identificacion</mat-label>
+          <input matInput formControlName="clientIdentification">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Genero</mat-label>
+          <input matInput formControlName="gender">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Telefono</mat-label>
+          <input matInput formControlName="phone">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Codigo Postal</mat-label>
+          <input matInput formControlName="zipCode">
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Nacionalidad</mat-label>
+          <input matInput formControlName="nationality">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <mat-label>Fecha de nacimiento</mat-label>
+          <input matInput type="date" formControlName="birthDate">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>Primer Apellido</mat-label>
+          <input matInput formControlName="lastName1">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>Segundo Apellido</mat-label>
+          <input matInput formControlName="lastName2">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <mat-label>ID</mat-label>
+          <input matInput formControlName="id">
+        </mat-form-field>
+      
+        <button mat-raised-button color="primary" type="submit">Crear</button>
+      </form>
+      
+  </div>
+  
+  <br>
+  <br>
+
+  <div class="center">
+    <form [formGroup]="form" (ngSubmit)="onUpdate()" class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Identificacion</mat-label>
+        <input matInput formControlName="clientIdentification">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Genero</mat-label>
+        <input matInput formControlName="gender">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Telefono</mat-label>
+        <input matInput formControlName="phone">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Codigo Postal</mat-label>
+        <input matInput formControlName="zipCode">
+      </mat-form-field>
+      
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Nacionalidad</mat-label>
+        <input matInput formControlName="nationality">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Fecha de nacimiento</mat-label>
+        <input matInput type="date" formControlName="birthDate">
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>Primer Apellido</mat-label>
+        <input matInput formControlName="lastName1">
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>Segundo Apellido</mat-label>
+        <input matInput formControlName="lastName2">
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>ID</mat-label>
+        <input matInput formControlName="id">
+      </mat-form-field>
+      
+        <button mat-raised-button color="accent" type="submit">Actulizar</button>
+      </form>
+      
+  </div>
+  
+  <br>
+  <br>
+
+  <div class="center">
+    <form [formGroup]="form" (ngSubmit)="onDelete()" class="example-form">
+
+        <mat-form-field class="example-full-width">
+          <mat-label>ID</mat-label>
+          <input matInput formControlName="id">
+        </mat-form-field>
+      
+        <button mat-raised-button color="warn" type="submit">Borrar</button>
+      </form>
+      
+  </div>
+  
+  
