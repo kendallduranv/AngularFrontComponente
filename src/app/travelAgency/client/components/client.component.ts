@@ -55,7 +55,7 @@ export class ClientComponent implements OnInit {
   }
 
   onUpdate() {
-    debugger;
+    ;
     this.clientService.updateData(this.form.value).subscribe(response => {
       console.log('Data updated', response);
       this.loadData();

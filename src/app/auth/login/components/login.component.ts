@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
 
     this.loginService.addData(this.form.value).subscribe(credentials=>{
       this.form.reset();
-      debugger;
+      ;
 
       if(credentials.name!==null){
         this.router.navigate(['/travelAgency/service']);

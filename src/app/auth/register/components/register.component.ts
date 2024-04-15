@@ -48,7 +48,7 @@ export class RegisterComponent implements OnInit {
 
   onSubmit() {
 
-    debugger
+    
 
     const formValue = { ...this.form.value };
 

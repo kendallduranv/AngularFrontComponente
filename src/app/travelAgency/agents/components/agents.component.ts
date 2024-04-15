@@ -48,7 +48,7 @@ export class AgentsComponent implements OnInit {
   }
 
   onUpdate() {
-    debugger;
+    ;
     this.agentsService.updateData(this.form.value).subscribe(response => {
       console.log('Data updated', response);
       this.loadData();

@@ -48,7 +48,7 @@ export class ServiceComponent implements OnInit {
   }
 
   onUpdate() {
-    debugger;
+    ;
     this.ServiceService.updateData(this.form.value).subscribe(response => {
       console.log('Data updated', response);
       this.loadData();
