@@ -9,6 +9,7 @@ import { TravelAgencyRoutingModule } from './travelAgency.routing';
 import { AgentsComponent } from './agents/components/agents.component';
 import { ServiceComponent } from './service/components/service.component';
 import { ClientComponent } from './client/components/client.component';
+import { DestinationComponent } from './destination/components/destination.component';
 
 
 
@@ -16,7 +17,8 @@ import { ClientComponent } from './client/components/client.component';
     declarations: [
         AgentsComponent,
         ServiceComponent,
-        ClientComponent
+        ClientComponent,
+        DestinationComponent
 
     ],
     imports: [

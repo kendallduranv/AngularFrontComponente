@@ -1,25 +1,25 @@
 <div class="background-color">
 
   <br>
-  <mat-label class="font-props">Servicios </mat-label>
+  <mat-label class="font-props">Destino </mat-label>
 
 
   <div>
     <div class="col-10 center-table margin-top">
       <mat-table [dataSource]="dataList" class="mat-elevation-z8">
-        <ng-container matColumnDef="serviceName">
-          <mat-header-cell *matHeaderCellDef> Nombre del servicio </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{element.serviceName}} </mat-cell>
+        <ng-container matColumnDef="airport">
+          <mat-header-cell *matHeaderCellDef> Aeropuerto </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.airport}} </mat-cell>
         </ng-container>
 
-        <ng-container matColumnDef="description">
-          <mat-header-cell *matHeaderCellDef> Descripcion </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{element.description}} </mat-cell>
+        <ng-container matColumnDef="city">
+          <mat-header-cell *matHeaderCellDef> Ciudad </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.city}} </mat-cell>
         </ng-container>
 
-        <ng-container matColumnDef="priceUSD">
-          <mat-header-cell *matHeaderCellDef> Precio USD </mat-header-cell>
-          <mat-cell *matCellDef="let element"> {{element.priceUSD}} </mat-cell>
+        <ng-container matColumnDef="country">
+          <mat-header-cell *matHeaderCellDef> País </mat-header-cell>
+          <mat-cell *matCellDef="let element"> {{element.country}} </mat-cell>
         </ng-container>
 
         <ng-container matColumnDef="id">
@@ -49,18 +49,18 @@
     <div class="center">
       <form [formGroup]="form" (ngSubmit)="onSubmit()" class="example-form">
         <mat-form-field class="example-full-width">
-          <mat-label>Nombre del servicio</mat-label>
-          <input matInput formControlName="serviceName">
+          <mat-label>Nombre del aeropuerto</mat-label>
+          <input matInput formControlName="airport">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-          <mat-label>Descripcion del servicio</mat-label>
-          <input matInput formControlName="description">
+          <mat-label>Nombre de la ciudad</mat-label>
+          <input matInput formControlName="city">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-          <mat-label>Costo del servicio</mat-label>
-          <input matInput formControlName="priceUSD">
+          <mat-label>Nombre del país</mat-label>
+          <input matInput formControlName="country">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
@@ -78,18 +78,18 @@
     <div class="center">
       <form [formGroup]="form" (ngSubmit)="onUpdate()" class="example-form">
         <mat-form-field class="example-full-width">
-          <mat-label>Nombre del servicio</mat-label>
-          <input matInput formControlName="serviceName">
+          <mat-label>Nombre del aeropuerto</mat-label>
+          <input matInput formControlName="airport">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-          <mat-label>Descripcion del servicio</mat-label>
-          <input matInput formControlName="description">
+          <mat-label>Nombre de la ciudad</mat-label>
+          <input matInput formControlName="city">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
-          <mat-label>Costo del servicio</mat-label>
-          <input matInput formControlName="priceUSD">
+          <mat-label>Nombre del país</mat-label>
+          <input matInput formControlName="country">
         </mat-form-field>
 
         <mat-form-field class="example-full-width">

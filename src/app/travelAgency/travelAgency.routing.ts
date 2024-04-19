@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 
 import { Routes, RouterModule } from '@angular/router';
-import { AgentsComponent } from './agents/components/agents.component';
 import { ServiceComponent } from './service/components/service.component';
 import { ClientComponent } from './client/components/client.component';
+import { DestinationComponent } from './destination/components/destination.component';
 
 
 
@@ -14,8 +14,8 @@ const routes: Routes =[
         path:'',
         children:[
             {
-                path:'agent',
-                component:AgentsComponent
+                path:'destination',
+                component:DestinationComponent
             },
             {
                 path:'service',

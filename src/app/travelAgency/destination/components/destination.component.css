@@ -2,7 +2,7 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background-color: #EEFAEF; 
+    background-color: #F7F0FA; 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -10,7 +10,7 @@ body {
 
 
 .background-color{
-    background: #EEFAEF;
+    background: #F7F0FA;
     min-height: 100vh;
 }
 
