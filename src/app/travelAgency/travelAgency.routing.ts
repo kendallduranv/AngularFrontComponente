@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 
 import { Routes, RouterModule } from '@angular/router';
 import { ServiceComponent } from './service/components/service.component';
-import { ClientComponent } from './client/components/client.component';
 import { DestinationComponent } from './destination/components/destination.component';
+import { PackageComponent } from './package/components/package.component';
 
 
 
@@ -22,8 +22,8 @@ const routes: Routes =[
                 component:ServiceComponent
             },
             {
-                path:'client',
-                component: ClientComponent 
+                path:'package',
+                component: PackageComponent 
             },
             // {
             //     path:'editar/:id',

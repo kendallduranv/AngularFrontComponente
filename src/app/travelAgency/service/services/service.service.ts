@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ServiceService {
-  private apiUrlGet = 'http://localhost:8080/api/service/retrieveall'; // Reemplaza esto con la URL de tu API
-  private apiUrlPost = 'http://localhost:8080/api/service/create'; // Reemplaza esto con la URL de tu API
-  private apiUrlPut = 'http://localhost:8080/api/service/update'; // Reemplaza esto con la URL de tu API
-  private apiUrlDelete = 'http://localhost:8080/api/service/delete'; // Reemplaza esto con la URL de tu API
+  private apiUrlGet = 'http://localhost:8080/api/service/retrieveall'; 
+  private apiUrlPost = 'http://localhost:8080/api/service/create'; 
+  private apiUrlPut = 'http://localhost:8080/api/service/update'; 
+  private apiUrlDelete = 'http://localhost:8080/api/service/delete'; 
 
   constructor(private http: HttpClient) { }
 

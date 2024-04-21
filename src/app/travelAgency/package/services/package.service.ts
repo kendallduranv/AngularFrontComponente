@@ -5,11 +5,11 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class DestinationService {
-  private apiUrlGet = 'http://localhost:8080/api/destination/retrieveall'; 
-  private apiUrlPost = 'http://localhost:8080/api/destination/create'; 
-  private apiUrlPut = 'http://localhost:8080/api/destination/update'; 
-  private apiUrlDelete = 'http://localhost:8080/api/destination/delete'; 
+export class PackageService {
+  private apiUrlGet = 'http://localhost:8080/api/package/retrieveall'; 
+  private apiUrlPost = 'http://localhost:8080/api/package/create'; 
+  private apiUrlPut = 'http://localhost:8080/api/package/update'; 
+  private apiUrlDelete = 'http://localhost:8080/api/package/delete'; 
 
   constructor(private http: HttpClient) { }
 

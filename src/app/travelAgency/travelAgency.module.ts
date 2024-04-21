@@ -10,6 +10,7 @@ import { AgentsComponent } from './agents/components/agents.component';
 import { ServiceComponent } from './service/components/service.component';
 import { ClientComponent } from './client/components/client.component';
 import { DestinationComponent } from './destination/components/destination.component';
+import { PackageComponent } from './package/components/package.component';
 
 
 
@@ -18,7 +19,8 @@ import { DestinationComponent } from './destination/components/destination.compo
         AgentsComponent,
         ServiceComponent,
         ClientComponent,
-        DestinationComponent
+        DestinationComponent,
+        PackageComponent
 
     ],
     imports: [

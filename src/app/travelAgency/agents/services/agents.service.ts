@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AgentsService {
-  private apiUrlGet = 'http://localhost:8080/api/agent/retrieveall'; // Reemplaza esto con la URL de tu API
-  private apiUrlPost = 'http://localhost:8080/api/agent/create'; // Reemplaza esto con la URL de tu API
-  private apiUrlPut = 'http://localhost:8080/api/agent/update'; // Reemplaza esto con la URL de tu API
-  private apiUrlDelete = 'http://localhost:8080/api/agent/delete'; // Reemplaza esto con la URL de tu API
+  private apiUrlGet = 'http://localhost:8080/api/agent/retrieveall'; 
+  private apiUrlPost = 'http://localhost:8080/api/agent/create'; 
+  private apiUrlPut = 'http://localhost:8080/api/agent/update'; 
+  private apiUrlDelete = 'http://localhost:8080/api/agent/delete'; 
 
   constructor(private http: HttpClient) { }
 
